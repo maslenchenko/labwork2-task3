@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>create a map!</title>
+    <style>
+        nav h1 {
+            color: #2b80e7;
+            font-size: 3em;
+            text-decoration: none;
+        }
+        button {
+            background-color: #2b80e7;
+            color: #ffffff;
+            display: block;
+            margin: 0 auto;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <img src="{{url_for('static', filename='logo.jpg')}}" height="150px" width="200px" align="center" />
+    <nav>
+        <form method="POST" action = "/create">
+            <div class = "form-group">
+                <h1 style="text-align:center">create a map with your friends' locations</h1>
+                <h3 style="text-align:center">write down a username, press Enter and click the button below</h3>
+                <p align="center"><input type="text" name = "username" placeholder="       enter twitter account"></p>
+            </div>
+        </form>
+        <form method="POST" action = "/create/map">
+            <p style="text-align:center"><a href=friends_locs.html ><button class=green style="height:45px;width:150px">create a map</button></a></p>
+        </form>
+        <a href="#"></a>
+    </nav>
+    <hr>
+</body>
+</html>
