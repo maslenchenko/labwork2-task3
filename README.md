@@ -1,2 +1,4 @@
-# labwork2-task3
-second semester
+FRIENDS' LOCATIONS MAP  
+There are one main module - app.py, four auxiliary modules - oauth.py, twurl.py, main_twitter.py and map_creation.py, one template - index.html and two examples of the work of the program - friends_locs.html and twitter.json.
+App.py creates three web pages - '/', '/create' and '/create/map' using Flask library. The first page is main, the second one contains input box, where user should enter a twitter username, twitter's logo, some instructions and the button for map creation. 
+Main_twitter.py recieves a username and using twitter API collects user's info and writes it to a JSON file. Then it opens a file, parses it and then creates a dictionary. User's name is a key, tuple is a value. The first element of a tuple is another tuple with two coordinates - latitude and longtitude that further going to help locating markers on a map. Second value is a location from twitter account.
