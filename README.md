@@ -1,4 +1,4 @@
-FRIENDS' LOCATIONS MAP  
+# FRIENDS' LOCATIONS MAP  
 There is one main module - app.py, four auxiliary modules - oauth.py, twurl.py, main_twitter.py and map_creation.py, one template - index.html and two examples of the work of the program - friends_locs.html and twitter.json.
 
 App.py creates three web pages - '/', '/create' and '/create/map' using Flask library. The first page is main, the second one contains an input box, where the user should enter a Twitter username, twitter's logo, some instructions and the button for map creation. This module uses index.html template.
@@ -9,7 +9,7 @@ Map_creation.py accepts data (dictionary) from the main_twitter.py module and ge
 
 To run the module user should enter the following commands:
 
-$export FLASK_APP=app.py
+$export FLASK_APP=app.py <br />
 $flask run --host=0.0.0.0 --port=8080
 
 and copy the link that appears right after entering these commands (for instance, http://10.10.247.27:8080/).
