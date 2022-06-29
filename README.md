@@ -8,10 +8,10 @@ Main_twitter.py receives a username and, using Twitter API, collects the user's 
 Map_creation.py accepts data (dictionary) from the main_twitter.py module and generates a map using folium library.
 
 To run the module user should enter the following commands:
-
+```
 $export FLASK_APP=app.py <br />
 $flask run --host=0.0.0.0 --port=8080
-
+```
 and copy the link that appears right after entering these commands (for instance, http://10.10.247.27:8080/).
 
 Then the main page will appear - with the twitters logo, some text, instructions, input box and 'create a map' button.
